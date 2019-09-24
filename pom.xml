@@ -18,12 +18,12 @@
         <dependency>
             <groupId>ai.turbochain.ipex</groupId>
             <artifactId>ipex-core</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.5</version>
         </dependency>
         <dependency>
             <groupId>ai.turbochain.ipex</groupId>
             <artifactId>ipex-exchange-core</artifactId>
-            <version>1.0.4</version>
+            <version>1.0.5</version>
         </dependency>
     
 		<dependency>
@@ -74,10 +74,10 @@
     </dependencies>
     <profiles>
         <profile>
-            <id>dev</id>
+            <id>dev</id>       
             <activation>
                 <activeByDefault>true</activeByDefault>
-            </activation>
+            </activation>   
             <build>
                 <resources>
                     <resource>
@@ -85,34 +85,19 @@
                     </resource>
                 </resources>
             </build>
-            <!--<properties>
-                <project.profile>application</project.profile>
-            </properties>-->
         </profile>
         <profile>
             <id>test</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <resources>
                     <resource>
                         <directory>src/main/resources/test</directory>
                     </resource>
                 </resources>
-            </build>
-            <!--<properties>
-                <project.profile>application</project.profile>
-            </properties>-->
+            </build>  
         </profile>
         <profile>
             <id>prod</id>
-            <!--<properties>
-                <project.profile>application-prod</project.profile>
-            </properties>-->
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <resources>
                     <resource>
